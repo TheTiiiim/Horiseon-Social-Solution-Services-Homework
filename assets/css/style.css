@@ -4,25 +4,36 @@
     margin: 0;
 }
 
+p {
+    font-size: 16px;
+}
+
 body {
     background-color: #d9dcd6;
 }
+
+
+/* appears at top of page */
 
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    overflow: hidden;
 }
 
 header h1 {
-    display: inline-block;
+    float: left;
     font-size: 48px;
 }
 
 header h1 .seo {
     color: #d9dcd6;
 }
+
+
+/* navigation menu in line in header */
 
 header nav {
     padding-top: 15px;
@@ -46,11 +57,10 @@ nav a {
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
-}
 
-figure#cover-image {
+/* cover image */
+
+figure.billboard {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -59,17 +69,13 @@ figure#cover-image {
     background-position: center;
 }
 
-main {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
+
+/* aside on right next to main */
 
 aside {
     margin-right: 20px;
     padding: 20px;
-    clear: both;
-    float: right;
+    float: left;
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -92,6 +98,15 @@ aside section img {
     max-width: 150px;
 }
 
+
+/* main on left next to aside */
+
+main {
+    width: 75%;
+    float: left;
+    margin: auto 20px;
+}
+
 main section {
     margin-bottom: 20px;
     padding: 50px;
@@ -104,6 +119,9 @@ main section {
 main section img {
     max-height: 200px;
 }
+
+
+/* alternate image position */
 
 main section:nth-child(even) img {
     float: right;
